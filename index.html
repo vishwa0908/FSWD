@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-purple-50">
+
+        <div class="flex h-screen">
+            <!-- Sidebar -->
+            <div class="bg-gradient-to-t from-purple-500 to-purple-900 text-white w-64 h-90 p-4">
+                <h1 class="text-2xl font-bold mb-6">Dashboard</h1>
+                <ul>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400 font-semibold">Home</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400 font-semibold">Profile</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400 font-semibold">Settings</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400 font-semibold">Messages</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400 font-semibold">Logout</a></li>
+                </ul>
+            </div>
+    
+            <!-- Main Content -->
+            <div class="flex-1 p-6">
+                <!-- Header -->
+                <header class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-semibold font-serif">Welcome to the Dashboard</h2>
+                    <div>
+                        <button class="bg-purple-800 font-semibold text-white px-4 py-2 rounded">Add New</button>
+                    </div>
+                </header>
+    
+                <!-- Content Area -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-6">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h3 class="font-bold text-xl">Analytics</h3>
+                        <img class="mt-1 h-[100px] w-full" src="images/data.png">
+                    </div>
+
+                    <div class="bg-white p-4 rounded shadow md:col-span-2">
+                        <h3 class="font-bold text-xl">Sales Growth</h3>
+                        <img class="mt-1 h-[100px] w-full" src="images/line-chart.png">
+                    </div>
+
+                    <div class="bg-white p-4 rounded shadow md:col-span-2">
+                        <h3 class="font-bold text-xl">KPIs</h3>
+                        <img class="mt-1 h-[100px] w-full" src="images/table.png">
+                    </div>
+
+                    <div class="bg-white p-4 rounded shadow">
+                        <h3 class="font-bold text-xl">Activity</h3>
+                        <img class="mt-1 h-[100px] w-full" src="images/pie-chart.png">
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded shadow flex flex-col justify-center items-center">
+                        <h3 class="font-bold text-lg">Total Accounts</h3>
+                        <h1 class="font-bold text-4xl flex items-center">2104</h1>
+                        <small class="text-green-600 text-lg ml-2">20↑</small>
+                        
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded shadow flex flex-col justify-center items-center">
+                        <h3 class="font-bold text-lg">Orders per Month</h3>
+                        <h1 class="font-bold text-4xl flex items-center">46%</h1>
+                        <small class="text-green-600 text-lg ml-2">7↑</small>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
